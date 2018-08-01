@@ -54,13 +54,13 @@ config.DEMA = {
 config.MACD = {
   // EMA weight (α)
   // the higher the weight, the more smooth (and delayed) the line
-  short: 10,
-  long: 21,
+  short: 1,
+  long: 2,
   signal: 9,
   // the difference between the EMAs (to act as triggers)
   thresholds: {
-    down: -0.025,
-    up: 0.025,
+    down: -0.001,
+    up: 0.001,
     // How many candle intervals should a trend persist
     // before we consider it real?
     persistence: 1

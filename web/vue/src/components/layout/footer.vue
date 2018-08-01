@@ -1,9 +1,8 @@
 <template lang='jade'>
-  footer.p2.bg--off-white
+  footer.p2
     .contain
       p
-        em Use Gekko at your own risk.
-      p Using Gekko v{{ version.gekko }} and Gekko UI v{{ version.ui }}.
+        em @copyrights.
 </template>
 
 <script>
@@ -21,3 +20,8 @@ export default {
   }
 }
 </script>
+<style>
+footer{
+  background-color: #000 !important;
+}
+</style>

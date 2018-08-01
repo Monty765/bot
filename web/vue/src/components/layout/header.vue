@@ -1,17 +1,13 @@
 <template lang='jade'>
   div
     #top
-    header.bg--off-white.grd
-      .contain.grd-row
-        h3.py1.px2.col-2 Gekko UI
-    nav.bg--light-gray
+    nav
       .menu.contain
-        router-link(to='/home').py1 Home
-        router-link(to='/live-gekkos').py1 Live Gekkos
+        router-link(to='/home').py1 BOT
+        router-link(to='/live-gekkos').py1 Live Bots
         router-link(to='/backtest').py1 Backtest
         router-link(to='/data').py1 Local data
         router-link(to='/config').py1 Config
-        a(href='https://gekko.wizb.it/docs/introduction/about_gekko.html', target='_blank').py1 Documentation
 
 </template>
 
@@ -33,15 +29,28 @@ export default {}
   display: block;
   text-align: center;
   text-decoration: none;
-  color: inherit;
+  color: #FFC300  ;
+
 }
 
 .menu .router-link-active {
   background-color: rgba(250,250,250,.99);
+  color:#000;
 }
 
 .menu a:hover {
-  text-decoration: underline;
+  text-decoration: none;
+  background-color:#FFC300;
+  color: #000;
 }
-
+.menu .router-link-active {
+  text-decoration: none;
+  background-color:#FFC300;
+}
+h1{
+  padding-right: 20px;
+}
+nav{
+  background-color:#000;
+}
 </style>

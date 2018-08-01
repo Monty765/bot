@@ -19,7 +19,7 @@
           td {{ gekko.watch.exchange }}
           td {{ gekko.watch.currency }}
           td {{ gekko.watch.asset }}
-          td 
+          td
             template(v-if='gekko.firstCandle') {{ fmt(gekko.firstCandle.start) }}
           td
             template(v-if='gekko.lastCandle') {{ fmt(gekko.lastCandle.start) }}
@@ -52,8 +52,8 @@
             template(v-if='!gekko.report') 0
             template(v-if='gekko.report') {{ round(gekko.report.profit) }} {{ gekko.watch.currency }}
     .hr
-    h2 Start a new live Gekko
-    router-link.btn--primary(to='/live-gekkos/new') Start a new live Gekko!
+    h2 Start a new live Bot
+    router-link.btn--primary(to='/live-gekkos/new') Start a new live Bot!
 </template>
 
 <script>
@@ -64,7 +64,7 @@ import marked from '../../tools/marked'
 
 const text = marked(`
 
-## Live Gekko
+## Live Bot
 
 Run your strategy against the live market!
 

@@ -3,11 +3,15 @@ import App from './App.vue'
 
 import VueRouter from 'vue-router'
 Vue.use(VueRouter);
+import VueResource from "vue-resource"
+Vue.use(VueResource);
 
 import store from './store'
 
 import backtester from './components/backtester/backtester.vue'
 import home from './components/layout/home.vue'
+import login from './components/user/login.vue'
+import register from './components/user/register.vue'
 
 import data from './components/data/data.vue'
 import importer from './components/data/import/importer.vue'
@@ -24,7 +28,9 @@ const router = new VueRouter({
   mode: 'hash',
   base: __dirname,
   routes: [
+    { path: '/register', component:register },
     { path: '/', redirect: '/home' },
+    { path: '/login', component: login },
     { path: '/home', component: home },
     { path: '/backtest', component: backtester },
     { path: '/config', component: config },

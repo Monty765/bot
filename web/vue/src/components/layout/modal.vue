@@ -1,4 +1,4 @@
-<template lang='jade'>
+/* <template lang='jade'>
   div(v-if='active')
     #modal-background
     #modal.modal
@@ -73,6 +73,6 @@ export default {
 
   /* let it scroll */
   overflow: auto;
-  
+
 }
-</style>
+</style> */

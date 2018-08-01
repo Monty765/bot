@@ -75,7 +75,7 @@ Once NGINX is installed you will need to modify the configuration file. For Debi
     }
 
     upstream websocket {
-        server localhost:3000;
+        server http://localhost:3000;
     }
 
     server {
@@ -84,7 +84,7 @@ Once NGINX is installed you will need to modify the configuration file. For Debi
         root /var/www/html;
 
         ssl_certificate /etc/nginx/ssl/nginx.crt;
-        ssl_certificate_key /etc/nginx/ssl/nginx.key;	
+        ssl_certificate_key /etc/nginx/ssl/nginx.key;
 
         location / {
                 proxy_buffers 8 32k;
